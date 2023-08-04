@@ -1,0 +1,135 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1em;
+  /* background: url(back.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat; */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.notifyBox {
+  padding: 1vh;
+  width: 33vh;
+
+  height: auto;
+  min-height: 7vh;
+  flex-shrink: 0;
+  border-radius: 2.688px;
+  border: 0.538px solid #242226;
+  background: radial-gradient(182.57% 107.93% at 7.58% 23.20%, rgba(0, 0, 0, 0.67) 0%, rgba(23, 21, 28, 0.92) 100%);
+  box-shadow: 0px 0px 8.512295722961426px 0px #000;
+  border-left: 10px solid #EB4341;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+}
+
+.svgBox {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.notifyTexts {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.2em;
+}
+
+.notifyHeader {
+  color: #EB4341;
+  font-family: Satoshi;
+  font-size: 22.085px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+
+}
+
+.notifyDesc {
+  color: #BABABA;
+  font-family: Satoshi;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+div.info {
+  border-left: 10px solid #2382FD;
+}
+
+h1.info {
+  color: #2382FD;
+}
+
+div.warn {
+  border-left: 10px solid #FEC422;
+}
+
+h1.warn {
+  color: #FEC422;
+}
+
+div.success {
+  border-left: 10px solid #41EB52;
+}
+
+h1.success {
+  color: #41EB52;
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  to {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+}
+
+
+.notifyBox {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+
+.removeNotifyBox {
+  animation: fadeOut 0.5s ease-in-out;
+}
